@@ -1,5 +1,5 @@
 # Bookmaker Ratings Widget API
-## /getwidget
+## /wp-json/bmr/v1.0/getwidget
 ###### Получить массив данных для виджета.
 
 **Метод**:
@@ -25,24 +25,31 @@
 
 *JSON*:
 ```
-{"status":"ok","data":{"bookmaker_id":309559,"name":"William Hill","url":"https:\/\/bookmaker-ratings.ru\/review\/obzor-bukmekerskoy-kontory-william-hill\/","feedback_url":"https:\/\/bookmaker-ratings.ru\/review\/obzor-bukmekerskoy-kontory-william-hill\/all-feedbacks\/?getfeedback","logo":"https:\/\/bookmaker-ratings.ru\/wp-content\/uploads\/2014\/12\/wh-logo1.png","user_rating":"3.5","rb_rating":4,"user_rating_count":318}}
+{
+    "bookmaker_id": 726203,
+    "name": "Фонбет",
+    "url": "https://bookmaker-ratings.ru/review/obzor-bukmekerskoy-kontory-fonbet/",
+    "feedback_url": "https://bookmaker-ratings.ru/review/obzor-bukmekerskoy-kontory-fonbet/all-feedbacks/?getfeedback",
+    "logo_for_light_bg": "https://bookmaker-ratings.ru/wp-content/uploads/2016/12/FC3F2D60B0FB6DD747C4780868B9EC8FA50A04C74440A28442-pimgpsh_fullsize_distr.png",
+    "logo_for_dark_bg": "https://bookmaker-ratings.ru/wp-content/uploads/2016/12/068035B7D555D7E706D04E4E0D7684904B7BB0D1843EDC9345-pimgpsh_fullsize_distr.png",
+    "user_rating": 3.8,
+    "rb_rating": 5,
+    "user_rating_count": 621
+}
 ```
 
 *PHP*:
 ```php
 array (
-  'status' => 'ok',
-  'data' => 
-  array (
-    'bookmaker_id' => 309559,
-    'name' => 'William Hill',
-    'url' => 'https://bookmaker-ratings.ru/review/obzor-bukmekerskoy-kontory-william-hill/',
-    'feedback_url' => 'https://bookmaker-ratings.ru/review/obzor-bukmekerskoy-kontory-william-hill/all-feedbacks/?getfeedback',
-    'logo' => 'https://bookmaker-ratings.ru/wp-content/uploads/2014/12/wh-logo1.png',
-    'user_rating' => '3.5',
-    'rb_rating' => 4,
-    'user_rating_count' => 318
-  ),
+  'bookmaker_id' => 726203,
+  'name' => 'Фонбет',
+  'url' => 'https://bookmaker-ratings.ru/review/obzor-bukmekerskoy-kontory-fonbet/',
+  'feedback_url' => 'https://bookmaker-ratings.ru/review/obzor-bukmekerskoy-kontory-fonbet/all-feedbacks/?getfeedback',
+  'logo_for_light_bg' => 'https://bookmaker-ratings.ru/wp-content/uploads/2016/12/FC3F2D60B0FB6DD747C4780868B9EC8FA50A04C74440A28442-pimgpsh_fullsize_distr.png',
+  'logo_for_dark_bg' => 'https://bookmaker-ratings.ru/wp-content/uploads/2016/12/068035B7D555D7E706D04E4E0D7684904B7BB0D1843EDC9345-pimgpsh_fullsize_distr.png',
+  'user_rating' => 3.79999999999999982236431605997495353221893310546875,
+  'rb_rating' => 5,
+  'user_rating_count' => 621,
 )
 ```
 
