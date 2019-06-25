@@ -53,7 +53,7 @@ array (
 )
 ```
 
-## /getfeedbacks
+## /getfeedbacks (not implemented)
 ###### Получить список отзывов.
 
 **Метод**:
